@@ -3,9 +3,106 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Touch it.</title>
+        <title>Alice Strete</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <style type="text/css" media="screen">
+        #wrapper{
+            margin-left: 10px;
+            width: 50%;
+        }
+        @media(max-width: 768px){
+            #wrapper {
+                width: 80%;
+            }
+        }
+        ul{
+            padding-top: 15px;
+            padding-left: 0px;
+        }
+        ul li{
+            display: inline;
+            margin-left: 5px;
+        }
+        h1{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+        #smaller-inner{
+            font-size: 0.5em !important;
+            font-weight: 300 !important;
+        }
+        .fa{
+            font-size: 1.2em;
+        }
+        #links a{
+            color:black;
+        }
+        #links a:hover{
+            color:gray;
+        }
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        </style>
     </head>
     <body>
-        Pump it up.
+        <div id="wrapper">
+            <div id="header">
+                <h1>Hi there, I'm Alice. <span id="smaller-inner">I like to <span class="element">x</span> </span> </h1>
+            </div>
+            <p>
+                For the past couple of years, I've been working as a Copywriter, Social Media Manager and Online Campaign Analyst,
+                in Cluj-Napoca, Yangon and Berlin. I've had the pleasure to collaborate with brands such as Sule Shangri-La,
+                Belmond Governor's Residence, FMI Air, Pun Hlaing Golf Estate, and Dulcefina, and to be part of amazing teams at
+                Kaus Group and Media.net.
+
+                If you're interested, check out my <a href="./cv.html">Résumé</a>.
+            </p>
+            <ul id="links">
+                <li> <a href="https://www.facebook.com/alice.strt"><i class="fa fa-facebook fa-1x"></i></a></li>
+                <li> <a href="http://alicestreteblog.tumblr.com/"><i class="fa fa-tumblr fa-1x"></i></a></li>
+                <li> <a href="https://www.linkedin.com/in/alicestrete"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                <li> <a href="https://www.pinterest.com/alicestrete/"><i class="fa fa-pinterest fa-1x"></i></a></li>
+                <li> <a href="https://www.instagram.com/alicestrt/"><i class="fa fa-camera-retro fa-1x"></i></a></li>
+                <li> <a href="https://www.behance.net/alicestrt"><i class="fa fa-behance fa-1x"></i></a></li>
+            </ul>
+        </div>
+        <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="typed.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            $(function(){
+                $(".element").typed({
+                    strings: ["x", "y", "z", "a", "b", "c"],
+                    startDelay: 100,
+                    typeSpeed: 5,
+                    backSpeed: 5,
+                    loop: true,
+                    contentType: 'html'
+                });
+            });
+        </script>
     </body>
 </html>
