@@ -24,6 +24,9 @@
             display: inline;
             margin-left: 5px;
         }
+        a{ color: gray; }
+        a:link { text-decoration: underline; }
+        a:hover{ color: black; }
         h1{
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
@@ -44,6 +47,10 @@
         }
         #links a:hover{
             color:gray;
+        }
+        #written-text p{
+            padding: 0px;
+            margin: 5px;
         }
         .typed-cursor{
             opacity: 1;
@@ -71,16 +78,39 @@
     <body>
         <div id="wrapper">
             <div id="header">
-                <h1>Hi there, I'm Alice. <span id="smaller-inner">I like to <span class="element">x</span> </span> </h1>
+                <h1>Hi there, I'm Alice. <span id="smaller-inner">I like to <span class="element">read Vonnegut.</span> </span> </h1>
             </div>
-            <p>
-                For the past couple of years, I've been working as a Copywriter, Social Media Manager and Online Campaign Analyst,
-                in Cluj-Napoca, Yangon and Berlin. I've had the pleasure to collaborate with brands such as Sule Shangri-La,
-                Belmond Governor's Residence, FMI Air, Pun Hlaing Golf Estate, and Dulcefina, and to be part of amazing teams at
-                Kaus Group and Media.net.
+            <div id="written-text">
+                <p>
+                    For the past couple of years, I've been a copywriter, social media
+                    manager and online campaign analyst,in Cluj-Napoca, Yangon and
+                    Berlin.
+                </p>
 
-                If you're interested, check out my <a href="./cv.html">Résumé</a>.
-            </p>
+                <p>
+                    I also got a Bachelor’s degree in advertising. I've collaborated
+                    with brands such as Sule Shangri-La, Belmond Governor's Residence,
+                    FMI Air, Pun Hlaing Golf Estate, and Dulcefina. You can check out
+                    some of <a href="https://www.behance.net/alicestrt">my work
+                    here.</a>
+                </p>
+
+                <p>
+                    I have been part of brilliant teams at Media.net and, currently, at
+                    Kaus Group. I’ve also played around with illustration on the side.
+                    You can take a peek here.
+                </p>
+
+                <p>
+                    I am currently based in Berlin, and looking for
+                    opportunities on location or remote, in a productive environment,
+                    with people that don’t call themselves “creative ninjas”.
+                </p>
+
+                <p>
+                    If you're interested, check out my <a href="./cv.html">résumé</a>.
+                </p>
+            </div>
             <ul id="links">
                 <li> <a href="https://www.facebook.com/alice.strt"><i class="fa fa-facebook fa-1x"></i></a></li>
                 <li> <a href="http://alicestreteblog.tumblr.com/"><i class="fa fa-tumblr fa-1x"></i></a></li>
@@ -95,10 +125,20 @@
         <script>
             $(function(){
                 $(".element").typed({
-                    strings: ["x", "y", "z", "a", "b", "c"],
-                    startDelay: 100,
-                    typeSpeed: 5,
-                    backSpeed: 5,
+                    strings: [
+                        "paint with watercolours.",
+                        "cook things.",
+                        "buy notebooks.",
+                        "drink wine.",
+                        "eat often.",
+                        "live in Berlin.",
+                        "drink coffee.",
+                        "practice calligraphy.",
+                        "listen to The Smiths."
+                    ],
+                    startDelay: 4000,
+                    typeSpeed: 90,
+                    backSpeed: 10,
                     loop: true,
                     contentType: 'html'
                 });
