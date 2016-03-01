@@ -78,7 +78,7 @@
     <body>
         <div id="wrapper">
             <div id="header">
-                <h1>Hi there, I'm Alice. <span id="smaller-inner">I like to <span class="element">read Vonnegut.</span> </span> </h1>
+                <h1>Hi there, I'm Alice. <span id="smaller-inner"> <span class="element"> </span> </span> </h1>
             </div>
             <div id="written-text">
                 <p>
@@ -126,19 +126,20 @@
             $(function(){
                 $(".element").typed({
                     strings: [
-                        "paint with watercolours.",
-                        "cook things.",
-                        "buy notebooks.",
-                        "drink wine.",
-                        "eat often.",
-                        "live in Berlin.",
-                        "drink coffee.",
-                        "practice calligraphy.",
-                        "listen to The Smiths."
+                        "I like to read Vonnegut.",
+                        "I like to paint with watercolours.",
+                        "I like to cook things.",
+                        "I like to buy notebooks.",
+                        "I like to drink wine.",
+                        "I like to eat often.",
+                        "I like to live in Berlin.",
+                        "I like to drink coffee.",
+                        "I like to practice calligraphy.",
+                        "I like to listen to The Smiths."
                     ],
-                    startDelay: 4000,
-                    typeSpeed: 90,
-                    backSpeed: 10,
+                    startDelay: 3000,
+                    typeSpeed: 100,
+                    backSpeed: 30,
                     loop: true,
                     shuffle:true,
                     contentType: 'html'
